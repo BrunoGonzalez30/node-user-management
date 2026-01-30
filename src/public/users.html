@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuarios Registrados</title>
+</head>
+<body>
+    <h1>Usuarios registrados</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody id="users-table">
+
+        </tbody>
+    </table>
+
+    <div id="edit-modal" class="modal">
+        <form id="edit-form">
+            <input type="hidden" id="edit-id">
+            <label>
+                Nombre
+                <input type="text" id="edit-name">
+            </label>
+
+            <label>
+                Email
+                <input type="email" id="edit-email">
+            </label>
+
+            <button type="submit">Guardar Cambios</button>
+            <button type="button" id="cancel-edit">Cancelar</button>
+        </form> 
+    </div>
+   <script src="/users.js"></script>
+</body>
+</html>
